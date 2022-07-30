@@ -5,9 +5,49 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Jesus Teran</title>
+        <link rel="stylesheet" href="css/default.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/8aed821357.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/logo.svg" alt="Logo" />
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link" onclick="toggleModal()">
+                    <a
+                        href="#"
+                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                        >About</a
+                    >
+                </li>
+                <li class="nav__link">
+                    <a
+                        href="#projects"
+                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                        >Projects</a
+                    >
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a
+                        href="#"
+                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                        >Contact</a
+                    >
+                </li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a
+                        href="#"
+                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                        ><i class="fas fa-adjust"></i
+                    ></a>
+                </li>
+            </ul>
+        </nav>
         <script src="index.js"></script>
     </body>
 </html>
