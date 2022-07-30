@@ -13,41 +13,95 @@
         ></script>
     </head>
     <body>
-        <nav>
-            <figure>
-                <img id="personal-logo" src="./assets/logo.svg" alt="Logo" />
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link" onclick="toggleModal()">
-                    <a
-                        href="#"
-                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                        >About</a
-                    >
-                </li>
-                <li class="nav__link">
-                    <a
-                        href="#projects"
-                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                        >Projects</a
-                    >
-                </li>
-                <li class="nav__link" onclick="toggleModal()">
-                    <a
-                        href="#"
-                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                        >Contact</a
-                    >
-                </li>
-                <li class="nav__link click" onclick="toggleContrast()">
-                    <a
-                        href="#"
-                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                        ><i class="fas fa-adjust"></i
-                    ></a>
-                </li>
-            </ul>
-        </nav>
+        <section id="landing-page">
+            <nav>
+                <figure>
+                    <img
+                        id="personal-logo"
+                        src="./assets/logo.svg"
+                        alt="Logo"
+                    />
+                </figure>
+                <ul class="nav__link--list">
+                    <li class="nav__link" onclick="toggleModal()">
+                        <a
+                            href="#"
+                            class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                            >About</a
+                        >
+                    </li>
+                    <li class="nav__link">
+                        <a
+                            href="#projects"
+                            class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                            >Projects</a
+                        >
+                    </li>
+                    <li class="nav__link" onclick="toggleModal()">
+                        <a
+                            href="#"
+                            class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                            >Contact</a
+                        >
+                    </li>
+                    <li class="nav__link click" onclick="toggleContrast()">
+                        <a
+                            href="#"
+                            class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                            ><i class="fas fa-adjust"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- header -->
+            <header class="header">
+                <div class="header__content">
+                    <h1 class="title">Hey</h1>
+                    <h1 class="title orange">I'm Jesus.</h1>
+                    <p class="header__para">
+                        I'm a
+                        <b class="orange">Frontend Software Engineer</b> with a
+                        passion for creating beautiful and functional web
+                        applications.
+                        <br />
+                        Here's a bit more <b class="orange">about me</b>.
+                    </p>
+                    <div class="social__list">
+                        <a
+                            href="https://www.linkedin.com/in/jjesusteran/"
+                            target="_blank"
+                            class="social__link click"
+                        >
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a
+                            href="https://github.com/lteranl"
+                            target="_blank"
+                            class="social__link click"
+                        >
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/jjesusteran/"
+                            target="_blank"
+                            class="social__link click"
+                        >
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- mail icon -->
+            <a href="#">
+                <button class="mail__btn click" onclick="toggleModal()">
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </a>
+            <!-- mouse icon -->
+            <a href="#projects" class="scroll">
+                <div class="scroll__icon click"></div>
+            </a>
+        </section>
         <script src="index.js"></script>
     </body>
 </html>
