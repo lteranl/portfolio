@@ -7,18 +7,22 @@
         <title>Jesus Teran</title>
         <link rel="stylesheet" href="css/default.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/8aed821357.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <nav>
             <figure>
-                <img id="personal-logo" src="img/logo.png" alt="Logo" />
+                <img id="personal-logo" src="./assets/logo.svg" alt="Logo" />
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a
-                        href="#languages"
+                        href="#"
                         class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                        >Languages</a
+                        >About</a
                     >
                 </li>
                 <li class="nav__link">
@@ -28,12 +32,19 @@
                         >Projects</a
                     >
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a
-                        href="mailto:email@email.com"
-                        class="nav__link--anchor nav__link--anchor-primary"
+                        href="#"
+                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
                         >Contact</a
                     >
+                </li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a
+                        href="#"
+                        class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                        ><i class="fas fa-adjust"></i
+                    ></a>
                 </li>
             </ul>
         </nav>
