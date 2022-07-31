@@ -172,12 +172,17 @@ nav {
     position: relative;
     transition: all 300ms ease-in;
 }
-.modal--open .modal__about {
+.modal--open .modal__about,
+.modal--open .modal__contact {
     transform: translateX(0);
 }
 .modal__about {
     background-color: #fff;
     transform: translateX(-110%);
+}
+.modal__para {
+    margin-bottom: 12px;
+    line-height: 1.75;
 }
 .modal__languages {
     display: flex;
@@ -207,4 +212,84 @@ nav {
 }
 .modal__language--img {
     width: 100%;
+}
+.modal__contact {
+    transform: translateX(110%);
+    background-color: #242424;
+    color: #fff;
+}
+.modal__title {
+    font-size: 32px;
+}
+.modal__sub-title {
+    margin: 12px 0 24px 0;
+    font-size: 16px;
+}
+.form__item {
+    margin-bottom: 20px;
+}
+.form__submit {
+    background-color: #f06449;
+    border: 2px solid #f06449;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+.form__submit:hover {
+    border-color: #fff;
+    background-color: transparent;
+}
+.form__submit:active {
+    border-color: #f06449;
+    color: #f06449;
+}
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    transition: all 300ms ease;
+}
+.modal__overlay--loading {
+    background-color: #242424;
+    font-size: 80px;
+}
+.modal__overlay--success {
+    background-color: #4bb543;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 28px;
+}
+.modal__overlay--visible {
+    z-index: 1;
+    display: flex;
+}
+.fa-spinner {
+    animation: spinner 750ms infinite linear;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 32px;
+    z-index: 100;
 }
