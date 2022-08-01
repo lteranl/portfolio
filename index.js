@@ -1,5 +1,5 @@
 let isModalOpen = false;
-
+let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
 function toggleModal() {
@@ -9,6 +9,15 @@ function toggleModal() {
     }
     isModalOpen = true;
     document.body.classList += "modal--open";
+}
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme";
+    } else {
+        document.body.classList.remove("dark-theme");
+    }
 }
 function contact(event) {
     event.preventDefault();
