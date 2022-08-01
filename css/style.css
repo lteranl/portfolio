@@ -113,6 +113,32 @@ textarea:focus {
     visibility: hidden;
     transition: all 400ms ease;
 }
+/* Dark Theme */
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-adjust,
+.dark-theme .header__para {
+    color: white;
+}
+.dark-theme section {
+    background-color: #242424;
+}
+.dark-theme #personal-logo {
+    filter: none;
+}
+.dark-theme .scroll__icon {
+    border-color: #fff;
+}
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after {
+    background-color: #fff;
+}
+.dark-theme .mail__btn {
+    background-color: #fff;
+    color: #242424;
+}
 /*  Nav Bar */
 nav {
     display: flex;
@@ -141,11 +167,12 @@ nav {
 .nav__link--anchor-primary:hover {
     background-color: #5d3eff;
 }
-.personal__logo {
-    font-size: 24px;
+#personal-logo {
+    width: 80px;
     color: #6030b1;
     margin: 0 12px;
     font-weight: bold;
+    filter: invert(70%);
 }
 
 /* Header */
