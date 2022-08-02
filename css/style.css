@@ -177,7 +177,10 @@ nav {
 
 /* Header */
 #landing-page {
+    position: relative;
     min-height: 100vh;
+    height: 100vh;
+    width: 100%;
 }
 .header {
     position: absolute;
@@ -211,7 +214,154 @@ nav {
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
 }
-
+#lock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 2px;
+    font-size: 20px;
+    background-color: #f06449;
+}
+.lockscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15%;
+    background: pink;
+    z-index: 10000;
+}
+.lockscreen.unlock {
+    opacity: 0;
+    pointer-events: none;
+    animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@keyframes slide-out-top {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+.lockscreen.lock {
+    opacity: 1;
+    pointer-events: all;
+    animation: bounce-in-top 1.1s both;
+}
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in;
+    }
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in;
+    }
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+}
+.profile img {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.profile .profile__name {
+    margin: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+.time {
+    margin: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.time .date {
+    font-size: 25px;
+}
+.time .clock {
+    font-size: 50px;
+}
+.time::after,
+.time::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+.fi-rr-lock {
+    text-align: center;
+    margin-top: 100px;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    border: 2px solid #fff;
+    line-height: 65px;
+    border-radius: 50%;
+    color: #fff;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    }
+}
+.profile {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .mail__btn {
     width: 70px;
     height: 70px;

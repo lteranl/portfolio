@@ -21,6 +21,21 @@
         </script>
     </head>
     <body>
+        <!-- locked screen -->
+        <div class="lockscreen lock">
+            <i
+                class="fa-solid fa-lock fi-rr-lock"
+                ondblclick="screenUnlock()"
+            ></i>
+            <div class="profile">
+                <img src="#" alt="user" />
+                <span class="profile__name">Jesus Teran</span>
+            </div>
+            <div class="time">
+                <span class="date">Mon, Jul 21</span>
+                <span class="clock">10:20</span>
+            </div>
+        </div>
         <!-- landing page -->
         <section id="landing-page" onmousemove="moveBackground(event)">
             <nav>
@@ -100,6 +115,13 @@
                     </div>
                 </div>
             </header>
+            <!-- lock screen btn -->
+            <!-- <a href="#"> -->
+            <button id="lock" onclick="screenLock()">
+                <!-- <i class="fa-solid fa-lock"></i> -->
+                lock
+            </button>
+            <!-- </a> -->
             <!-- mail icon -->
             <a href="#">
                 <button class="mail__btn click" onclick="toggleModal()">
@@ -110,6 +132,7 @@
             <a href="#projects" class="scroll">
                 <div class="scroll__icon click"></div>
             </a>
+
             <div class="modal">
                 <!-- about me and languages -->
                 <div class="modal__half modal__about">
