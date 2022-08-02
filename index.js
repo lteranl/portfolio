@@ -63,24 +63,8 @@ function moveBackground(event) {
 function screenLock() {
     lockScreen.classList += " lock";
     lockScreen.classList.remove("unlock");
-    if (lockScreen.requestFullscreen) {
-        lockScreen.requestFullscreen();
-    } else if (lockScreen.webkitRequestFullscreen) {
-        lockScreen.webkitRequestFullscreen();
-    } else if (lockScreen.mozRequestFullscreen) {
-        lockScreen.mozRequestFullscreen();
-    }
 }
 function screenUnlock() {
     lockScreen.classList += " unlock";
     lockScreen.classList.remove("lock");
-    setTimeout(() => {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) {
-            document.webkitExitFullscreen();
-        } else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen();
-        }
-    }, 1000);
 }
