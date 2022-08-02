@@ -1,6 +1,7 @@
 let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
+let lockScreen = document.querySelector(".lockscreen");
 
 function toggleModal() {
     if (isModalOpen) {
@@ -19,6 +20,7 @@ function toggleContrast() {
         document.body.classList.remove("dark-theme");
     }
 }
+
 function contact(event) {
     event.preventDefault();
     const loading = document.querySelector(".modal__overlay--loading");
@@ -56,4 +58,29 @@ function moveBackground(event) {
             y * boolInt
         }px) rotate(${x * boolInt * 10}deg)`;
     }
+}
+
+function screenLock() {
+    lockScreen.classList += " lock";
+    lockScreen.classList.remove("unlock");
+    if (lockScreen.requestFullscreen) {
+        lockScreen.requestFullscreen();
+    } else if (lockScreen.webkitRequestFullscreen) {
+        lockScreen.webkitRequestFullscreen();
+    } else if (lockScreen.mozRequestFullscreen) {
+        lockScreen.mozRequestFullscreen();
+    }
+}
+function screenUnlock() {
+    lockScreen.classList += " unlock";
+    lockScreen.classList.remove("lock");
+    setTimeout(() => {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        }
+    }, 1000);
 }
