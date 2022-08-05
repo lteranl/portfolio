@@ -360,7 +360,6 @@ textarea:focus {
     height: 100%;
     overflow: hidden;
 }
-
 .circles li{
     position: absolute;
     display: block;
@@ -390,7 +389,6 @@ textarea:focus {
     height: 20px;
     animation-delay: 4s;
 }
-
 .circles li:nth-child(4){
     left: 40%;
     width: 60px;
