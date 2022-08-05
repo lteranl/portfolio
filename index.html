@@ -30,18 +30,36 @@
     <body>
         <!-- locked screen -->
         <div class="lockscreen lock animate__animated animate__fadeIn">
-            <!-- <i class="fa-solid fa-lock fi-rr-lock" ondblclick="screenUnlock()"></i> -->
-            <i
-                class="fa-solid fa-unlock fi-rr-lock"
-                ondblclick="screenUnlock()"
-            ></i>
-            <div class="profile">
-                <img src="./assets/jesus.jpg" alt="user" />
-                <span class="profile__name">Jesus Teran</span>
-            </div>
-            <div class="time">
-                <span class="date">Mon, Jul 21</span>
-                <span class="clock">10:20</span>
+            <div class="card">
+                <div class="card-header">
+                    <span>
+                        <i class="fas fa-user"></i>
+                        <small>1,234</small>
+                    </span>
+                    <a href="#">Follow</a>
+                </div>
+                <div class="card-profile">
+                    <div class="name">
+                        <h4>Jesus Teran</h4>
+                        <small>Frontend Developer</small>
+                    </div>
+                    <div class="card-img">
+                        <img src="./assets/jesus.jpg" alt="Profile" />
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Amet similique.
+                    </p>
+                </div>
+                <h1 class="initials">JT</h1>
+                <a href="#" class="btn">
+                    <i
+                        class="fa-solid fa-unlock fi-rr-lock"
+                        onclick="screenUnlock()"
+                    ></i>
+                </a>
             </div>
         </div>
         <!-- landing page -->
