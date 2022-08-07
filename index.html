@@ -1,408 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Jesus Teran</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <!-- fontawesome -->
-        <script
-            src="https://kit.fontawesome.com/8aed821357.js"
-            crossorigin="anonymous"
-        ></script>
-        <!-- email js -->
-        <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-        ></script>
-        <script type="text/javascript">
-            (function () {
-                emailjs.init("user_OSQVwssVSVVqaMT0U7GdG");
-            })();
-        </script>
-        <!-- animated css -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-    </head>
-    <body class="dark-theme">
-        <!-- locked screen -->
-        <div class="lockscreen lock animate__animated animate__fadeIn">
-            <div class="card">
-                <div class="card-profile">
-                    <div class="name">
-                        <h4>Jesus Teran</h4>
-                        <small>Frontend Developer</small>
-                    </div>
-                    <div class="card-img">
-                        <img src="./assets/jesus.jpg" alt="Profile" />
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>
-                        "Nothing is impossible. The word itself says '<span
-                            class="orange"
-                            >I'm possible!</span
-                        >'" <i>— Audrey Hepburn</i>
-                    </p>
-                    <div class="icons">
-                        <a href="#" class="icon icon__linkedin">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="icon icon__github">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="#" class="icon icon__pdf">
-                            <i class="fa-solid fa-file-pdf"></i>
-                        </a>
-                    </div>
-                </div>
-                <h1 class="initials">JT</h1>
-                <a href="#" class="btn" onclick="screenUnlock()">
-                    <i class="fa-solid fa-unlock fi-rr-lock"></i>
-                </a>
-            </div>
-            <!-- boxes animation on lockscreen -->
-            <div class="area">
-                <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jesus Teran</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/8aed821357.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_OSQVwssVSVVqaMT0U7GdG");
+      })();
+    </script>
+    <!-- animated css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="dark-theme">
+    <!-- boxes animation on lockscreen -->
+    <div class="area">
+      <ul class="circles">
+        <li class="circle"></li>
+        <li class="circle"></li>
+        <li class="circle"></li>
+        <li class="circle"></li>
+        <li class="circle"></li>
+        <li class="circle"></li>
+        <li class="circle"></li>
+        <li class="circle"></li>
+        <li class="circle"></li>
+        <li class="circle"></li>
+      </ul>
+    </div>
+    <!-- locked screen -->
+    <div class="lockscreen lock animate__animated animate__fadeIn">
+      <div class="card">
+        <div class="card-profile">
+          <div class="name">
+            <h4>Jesus Teran</h4>
+            <small>Frontend Developer</small>
+          </div>
+          <div class="card-img">
+            <img src="./assets/jesus.jpg" alt="Profile" />
+          </div>
         </div>
-        <!-- landing page -->
-        <section id="landing-page" onmousemove="moveBackground(event)">
-            <nav>
-                <figure>
-                    <img
-                        id="personal-logo"
-                        src="./assets/jtLogo.png"
-                        alt="Logo"
-                    />
-                </figure>
-                <ul class="nav__link--list">
-                    <li class="nav__link" onclick="toggleModal()">
-                        <a
-                            href="#"
-                            class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                            >About</a
-                        >
-                    </li>
-                    <li class="nav__link">
-                        <a
-                            href="#projects"
-                            class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                            >Projects</a
-                        >
-                    </li>
-                    <li class="nav__link" onclick="toggleModal()">
-                        <a
-                            href="#"
-                            class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                            >Contact</a
-                        >
-                    </li>
-                    <li class="nav__link click" onclick="toggleContrast()">
-                        <a
-                            href="#"
-                            class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                            ><i class="fas fa-adjust"></i
-                        ></a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- header -->
-            <header class="header">
-                <div class="header__content">
-                    <h1 class="title">Hey</h1>
-                    <h1 class="title orange">I'm Jesus.</h1>
-                    <p class="header__para">
-                        I'm a
-                        <b class="orange">Frontend Software Engineer</b> with a
-                        passion for creating beautiful and functional web
-                        applications.
-                        <br />
-                        Here's a bit more <b class="orange">about me</b>.
-                    </p>
-                    <div class="social__list">
-                        <a
-                            href="https://www.linkedin.com/in/jjesusteran/"
-                            target="_blank"
-                            class="icon icon__linkedin social__link"
-                        >
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a
-                            href="https://github.com/lteranl"
-                            target="_blank"
-                            class="icon icon__github social__link"
-                        >
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/jjesusteran/"
-                            target="_blank"
-                            class="social__link icon icon__pdf"
-                        >
-                            <i class="fas fa-file-pdf"></i>
-                        </a>
-                    </div>
-                </div>
-            </header>
-            <!-- lock screen btn -->
-            <a href="#">
-                <button
-                    id="lock"
-                    class="mail__btn click"
-                    onclick="screenLock()"
-                >
-                    <i class="fa-solid fa-lock"></i>
-                </button>
+        <div class="card-body">
+          <p>
+            "Nothing is impossible. The word itself says '<span class="orange"
+              >I'm possible!</span
+            >'" <i>— Audrey Hepburn</i>
+          </p>
+          <div class="icons">
+            <a href="#" class="icon icon__linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <!-- mail icon -->
-            <a href="#">
-                <button class="mail__btn click" onclick="toggleModal()">
-                    <i class="fas fa-envelope"></i>
-                </button>
+            <a href="#" class="icon icon__github">
+              <i class="fa-brands fa-github"></i>
             </a>
-            <!-- mouse icon -->
-            <a href="#projects" class="scroll">
-                <div class="scroll__icon click"></div>
+            <a href="#" class="icon icon__pdf">
+              <i class="fa-solid fa-file-pdf"></i>
             </a>
+          </div>
+        </div>
+        <h1 class="initials">JT</h1>
+        <a href="#" class="btn" onclick="screenUnlock()">
+          <i class="fa-solid fa-unlock fi-rr-lock"></i>
+        </a>
+      </div>
+    </div>
+    <!-- landing page -->
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/jtLogo.png" alt="Logo" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- header -->
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I'm Jesus.</h1>
+          <p class="header__para">
+            I'm a
+            <b class="orange">Frontend Software Engineer</b> with a passion for
+            creating beautiful and functional web applications.
+            <br />
+            Here's a bit more <b class="orange">about me</b>.
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/jjesusteran/"
+              target="_blank"
+              class="icon icon__linkedin social__link"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/lteranl"
+              target="_blank"
+              class="icon icon__github social__link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jjesusteran/"
+              target="_blank"
+              class="social__link icon icon__pdf"
+            >
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <!-- lock screen btn -->
+      <a href="#">
+        <button id="lock" class="mail__btn click" onclick="screenLock()">
+          <i class="fa-solid fa-lock"></i>
+        </button>
+      </a>
+      <!-- mail icon -->
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      <!-- mouse icon -->
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
 
-            <div class="modal">
-                <!-- about me and languages -->
-                <div class="modal__half modal__about">
-                    <h3 class="modal__title modal__title--about">
-                        Here's a bit about me.
-                    </h3>
-                    <h4 class="modal__sub-title modal__sub title--about">
-                        Frontend Software Engineer
-                    </h4>
-                    <p class="modal__para">
-                        I'm a 29 year old
-                        <b class="orange">frontend software engineer</b> Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Iure
-                        illum laboriosam neque quod voluptatem delectus suscipit
-                        sequi aut totam voluptates. Architecto nihil hic
-                        cupiditate aperiam dolores labore enim placeat delectus.
-                        <br />
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Doloremque, excepturi? Consectetur dolorum,
-                        possimus repudiandae sed praesentium inventore deserunt.
-                        Natus quibusdam veniam, laborum neque a fugit facere sed
-                        esse odit ex?
-                        <!-- I'm
+      <div class="modal">
+        <!-- about me and languages -->
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub title--about">
+            Frontend Software Engineer
+          </h4>
+          <p class="modal__para">
+            I'm a 29 year old
+            <b class="orange">frontend software engineer</b> Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Iure illum laboriosam neque
+            quod voluptatem delectus suscipit sequi aut totam voluptates.
+            Architecto nihil hic cupiditate aperiam dolores labore enim placeat
+            delectus.
+            <br />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Doloremque, excepturi? Consectetur dolorum, possimus repudiandae sed
+            praesentium inventore deserunt. Natus quibusdam veniam, laborum
+            neque a fugit facere sed esse odit ex?
+            <!-- I'm
                         looking for a position where I can help build and
                         maintain a team of developers and designers. I'm also a very positive person and I love to share my knowledge with others.  I'm a fast learner and I'm always looking to learn new things. I'm a team player and I'm always looking to work with others to help me grow. I'm a hard worker and I'm always looking to work with others to help me grow.  -->
-                    </p>
-                    <div class="modal__languages">
-                        <figure class="modal__language">
-                            <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                                alt=""
-                                class="modal__language--img"
-                            />
-                            <span class="language__name">HTML</span>
-                        </figure>
-                        <figure class="modal__language">
-                            <img
-                                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-                                alt=""
-                                class="modal__language--img"
-                            />
-                            <span class="language__name">CSS</span>
-                        </figure>
-                        <figure class="modal__language">
-                            <img
-                                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-                                alt=""
-                                class="modal__language--img"
-                            />
-                            <span class="language__name">JavaScript</span>
-                        </figure>
-                        <figure class="modal__language">
-                            <img
-                                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-                                alt=""
-                                class="modal__language--img"
-                            />
-                            <span class="language__name">React</span>
-                        </figure>
-                    </div>
-                </div>
-                <!-- contact me -->
-                <div class="modal__half modal__contact">
-                    <i
-                        class="fas fa-times modal__exit click"
-                        onclick="toggleModal()"
-                    ></i>
-                    <h3 class="modal__title modal__title--contact">
-                        Let's have a chat!
-                    </h3>
-                    <h3 class="modal__sub-title modal__sub-title--contact">
-                        I'm currently open to new opportunities.
-                    </h3>
-                    <form id="contact__form" onsubmit="contact(event)">
-                        <div class="form__item">
-                            <label class="form__item--label">Name</label>
-                            <input
-                                class="input"
-                                name="user_name"
-                                type="text"
-                                required
-                            />
-                        </div>
-                        <div class="form__item">
-                            <label class="form__item--label">Email</label>
-                            <input
-                                class="input"
-                                name="user_email"
-                                type="email"
-                                required
-                            />
-                        </div>
-                        <div class="form__item">
-                            <label class="form__item--label">Message</label>
-                            <textarea
-                                class="input"
-                                name="message"
-                                type="text"
-                                required
-                            ></textarea>
-                        </div>
-                        <button id="contact__submit" class="form__submit">
-                            Send it my way
-                        </button>
-                    </form>
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+                class="modal__language--img"
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+                class="modal__language--img"
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+                class="modal__language--img"
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+                class="modal__language--img"
+              />
+              <span class="language__name">React</span>
+            </figure>
+          </div>
+        </div>
+        <!-- contact me -->
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea
+                class="input"
+                name="message"
+                type="text"
+                required
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
 
-                    <div class="modal__overlay modal__overlay--loading">
-                        <i class="fas fa-spinner"></i>
-                    </div>
-                    <div class="modal__overlay modal__overlay--success">
-                        Thanks for the message! Looking forward to speaking to
-                        you soon.
-                    </div>
-                </div>
-            </div>
-            <!-- landing page shapes -->
-            <img src="./assets/semi circle.svg" alt="" class="shape shape--0" />
-            <img src="./assets/circle.svg" alt="" class="shape shape--1" />
-            <img src="./assets/squiggly.svg" alt="" class="shape shape--2" />
-            <img src="./assets/circle.svg" alt="" class="shape shape--3" />
-            <img src="./assets/triangle.svg" alt="" class="shape shape--4" />
-            <img src="./assets/circle.svg" alt="" class="shape shape--5" />
-            <img src="./assets/squiggly.svg" alt="" class="shape shape--6" />
-            <img src="./assets/circle.svg" alt="" class="shape shape--7" />
-            <img src="./assets/semi circle.svg" alt="" class="shape shape--8" />
-        </section>
-        <!-- projects -->
-        <section id="projects">
-            <div class="container">
-                <div class="row">
-                    <h1 class="section__title">
-                        Here are some of my <span class="orange">projects</span>
-                    </h1>
-                    <ul class="project__list">
-                        <li class="project">
-                            <div class="project__wrapper">
-                                <img
-                                    src="./assets/blinker mockup.png"
-                                    class="project__img"
-                                    alt=""
-                                />
-                                <div class="project__wrapper--bg"></div>
-                                <div class="project__description">
-                                    <h3 class="project__description--title">
-                                        Example 1
-                                    </h3>
-                                    <h4 class="project__description--sub-title">
-                                        Html, CSS, JavaScript
-                                    </h4>
-                                    <p class="project__description--para">
-                                        lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Doloremque, excepturi?
-                                        Consectetur dolorum, possimus
-                                        repudiandae sed praesentium inventore
-                                        deserunt. Natus quibusdam veniam,
-                                        laborum neque a fugit facere sed esse
-                                        odit ex?
-                                    </p>
-                                    <div class="project__description--links">
-                                        <a
-                                            href="https://googleinstore.com.au/"
-                                            class="project__description--link"
-                                        >
-                                            <i class="fas fa-link"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- footer -->
-        <footer>
-            <div class="container">
-                <div class="row footer__row">
-                    <a href="#" class="footer__anchor">
-                        <figure class="footer__logo">
-                            <img
-                                src="./assets/jtLogo.png"
-                                alt=""
-                                class="footer__logo--img"
-                            />
-                        </figure>
-                        <span class="footer__logo--popper">
-                            Top
-                            <i class="fas fa-arrow-up"></i>
-                        </span>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="orange">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Example 1</h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloremque, excepturi? Consectetur dolorum, possimus
+                    repudiandae sed praesentium inventore deserunt. Natus
+                    quibusdam veniam, laborum neque a fugit facere sed esse odit
+                    ex?
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://googleinstore.com.au/"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
                     </a>
-                    <div class="footer__social--list">
-                        <a
-                            href="#"
-                            class="footer__social--link link__hover-effect link__hover-effect--white"
-                            target="_blank"
-                            >GitHub</a
-                        >
-                        <a
-                            href="#"
-                            class="footer__social--link link__hover-effect link__hover-effect--white"
-                            target="_blank"
-                            >LinkedIn</a
-                        >
-                        <a
-                            href="#"
-                            onclick="toggleModal()"
-                            class="footer__social--link link__hover-effect link__hover-effect--white"
-                            target="_blank"
-                            >Contact</a
-                        >
-                        <a
-                            href="#"
-                            class="footer__social--link link__hover-effect link__hover-effect--white"
-                            target="_blank"
-                            >Resume</a
-                        >
-                    </div>
-                    <div class="footer__copyright">
-                        Copyright &copy; 2020 JT. All rights reserved.
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </footer>
-        <script src="index.js"></script>
-    </body>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <a href="#" class="footer__anchor">
+            <figure class="footer__logo">
+              <img src="./assets/jtLogo.png" alt="" class="footer__logo--img" />
+            </figure>
+            <span class="footer__logo--popper">
+              Top
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
+          <div class="footer__social--list">
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              href="#"
+              onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+              target="_blank"
+              >Resume</a
+            >
+          </div>
+          <div class="footer__copyright">
+            Copyright &copy; 2020 JT. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
