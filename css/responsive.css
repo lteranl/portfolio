@@ -141,6 +141,15 @@
     .card__body p {
         font-size: 16px;
     }
+    .btn{
+        right: 40px
+    }
+    .click__me-sign{
+        right: 120px
+    }
+    .click__me-sign p{
+        font-size: 20px;
+    }
     .icons {
         column-gap: 24px;
     }
