@@ -53,7 +53,7 @@
     }
     .modal__half {
         width: 100%;
-        padding: 32px 40px;
+        padding: 72px 32px;
     }
     .modal__languages {
         justify-content: center;
@@ -103,9 +103,9 @@
     ::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
-    .modal{
-        top:0;
-        left:0;
+    .modal {
+        top: 0;
+        left: 0;
         transform: none;
         height: auto;
         width: 100%;
@@ -141,13 +141,13 @@
     .card__body p {
         font-size: 16px;
     }
-    .btn{
-        right: 40px
+    .btn {
+        right: 40px;
     }
-    .click__me-sign{
-        right: 120px
+    .click__me-sign {
+        right: 120px;
     }
-    .click__me-sign p{
+    .click__me-sign p {
         font-size: 20px;
     }
     .icons {
