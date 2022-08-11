@@ -7,13 +7,6 @@ let body = document.querySelector("body");
 const nav = document.getElementById("top__nav");
 const navButton = document.querySelector("button[aria-expanded]");
 
-window.onscroll = function () {
-    if (window.pageYOffset > 395) {
-        nav.classList.add("sticky");
-    } else {
-        nav.classList.remove("sticky");
-    }
-};
 function toggleNav({ target }) {
     const expanded = target.getAttribute("aria-expanded") === "true" || false;
 
