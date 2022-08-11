@@ -1,0 +1,217 @@
+/* 769px — 1024px: Small screens, laptops */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 60px;
+    }
+    .title {
+        font-size: 100px;
+    }
+    .row {
+        padding: 0;
+    }
+}
+/* 481px — 768px: iPads, Tablets */
+@media screen and (max-width: 768px) {
+    .card-profile {
+        margin-bottom: 2.5em;
+    }
+    .card {
+        width: 24em;
+        height: 32em;
+    }
+    .card-img {
+        width: 7.5em;
+        height: 7.5em;
+        right: -2.5em;
+    }
+    .card img {
+        width: 7em;
+        height: 7em;
+    }
+    .card-body p {
+        letter-spacing: 1px;
+        font-size: 1.2em;
+    }
+    .header {
+        padding: 0 60px;
+    }
+    .title {
+        font-size: 72px;
+    }
+    .section__title {
+        font-size: 40px;
+    }
+    .footer__social--list {
+        justify-content: center;
+        gap: 16px;
+    }
+    .modal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+    }
+    .modal__half {
+        width: 100%;
+        padding: 32px 40px;
+    }
+    .modal__languages {
+        justify-content: center;
+    }
+    .modal__language {
+        width: 20%;
+        margin: 0 8px;
+        padding: 0;
+    }
+    input {
+        height: 32px;
+    }
+    textarea {
+        height: 72px;
+    }
+    .form__submit {
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    .project__description {
+        left: 24px;
+        width: 85%;
+    }
+    .project__description--title {
+        font-size: 32px;
+    }
+    .project__description--para {
+        height: 60px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #242424;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #464646;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    .modal{
+        top:0;
+        left:0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .modal__half {
+        width: 90%;
+        border-radius: 10px;
+    }
+}
+/* 320px — 480px: Mobile devices */
+@media screen and (max-width: 480px) {
+    .card {
+        width: 16em;
+    }
+    .name {
+        left: 2em;
+        top: 11em;
+    }
+    .card-img {
+        right: -1em;
+        top: 6em;
+        width: 8.5em;
+        height: 8.5em;
+    }
+    .card img {
+        width: 8em;
+        height: 8em;
+    }
+    .card-body {
+        padding: 2em 1.5em;
+    }
+    .card-body p {
+        font-size: 1.1em;
+    }
+    .icons {
+        column-gap: 24px;
+    }
+    .nav {
+        padding: 0 24px;
+    }
+    .header {
+        padding: 0 60px;
+    }
+    .title {
+        font-size: 48px;
+    }
+    .header__para {
+        font-size: 16px;
+    }
+    [aria-controls="navbarDropdown"] {
+        display: block;
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: #242424;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+    [aria-expanded="true"] ~ ul {
+        display: block;
+        position: absolute;
+        left: 8px;
+        top: 5rem;
+        padding: 0 20px;
+        background-image: linear-gradient(
+            to right,
+            transparent,
+            rgba(0, 0, 0, 0.7)
+        );
+        width: 100%;
+        text-align: right;
+        box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+    }
+    [aria-expanded="true"] ~ ul li {
+        padding: 10px;
+    }
+    [aria-expanded="true"] ~ ul li a {
+        color: #fff;
+    }
+    .container {
+        padding: 0 30px;
+    }
+    .section__title {
+        font-size: 24px;
+    }
+    .project__description {
+        left: 15%;
+    }
+    .project__description--title {
+        font-size: 24px;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .project__description--links {
+        margin-top: 10px;
+    }
+    .footer__social--list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
