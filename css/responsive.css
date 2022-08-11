@@ -12,25 +12,25 @@
 }
 /* 481px — 768px: iPads, Tablets */
 @media screen and (max-width: 768px) {
-    .card-profile {
-        margin-bottom: 2.5em;
+    .card__profile {
+        margin-bottom: 40px;
     }
     .card {
-        width: 24em;
-        height: 32em;
+        width: 385px;
+        height: 512px;
     }
-    .card-img {
-        width: 7.5em;
-        height: 7.5em;
-        right: -2.5em;
+    .card__img {
+        width: 120px;
+        height: 120px;
+        right: -40px;
     }
     .card img {
-        width: 7em;
-        height: 7em;
+        width: 112px;
+        height: 112px;
     }
-    .card-body p {
+    .card__body p {
         letter-spacing: 1px;
-        font-size: 1.2em;
+        font-size: 19px;
     }
     .header {
         padding: 0 60px;
@@ -119,27 +119,27 @@
 /* 320px — 480px: Mobile devices */
 @media screen and (max-width: 480px) {
     .card {
-        width: 16em;
+        width: 256px;
     }
     .name {
-        left: 2em;
-        top: 11em;
+        left: 32px;
+        top: 175px;
     }
-    .card-img {
-        right: -1em;
-        top: 6em;
-        width: 8.5em;
-        height: 8.5em;
+    .card__img {
+        right: -16px;
+        top: 96px;
+        width: 136px;
+        height: 136px;
     }
     .card img {
-        width: 8em;
-        height: 8em;
+        width: 128px;
+        height: 128px;
     }
     .card-body {
-        padding: 2em 1.5em;
+        padding: 32px 24px;
     }
-    .card-body p {
-        font-size: 1.1em;
+    .card__body p {
+        font-size: 16px;
     }
     .icons {
         column-gap: 24px;
@@ -159,14 +159,14 @@
     [aria-controls="navbarDropdown"] {
         display: block;
         position: absolute;
-        right: 1.5rem;
-        top: 1.5rem;
+        right: 24px;
+        top: 24px;
         outline: none;
         background-color: transparent;
         border: 1px solid transparent;
         color: #242424;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 32px;
     }
     [aria-expanded="false"] ~ ul {
         display: none;
@@ -175,7 +175,7 @@
         display: block;
         position: absolute;
         left: 8px;
-        top: 5rem;
+        top: 80px;
         padding: 0 20px;
         background-image: linear-gradient(
             to right,
