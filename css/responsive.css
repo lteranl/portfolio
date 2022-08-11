@@ -12,14 +12,14 @@
 }
 /* 481px — 768px: iPads, Tablets */
 @media screen and (max-width: 768px) {
-    .card-profile {
+    .card__profile {
         margin-bottom: 2.5em;
     }
     .card {
         width: 24em;
         height: 32em;
     }
-    .card-img {
+    .card__img {
         width: 7.5em;
         height: 7.5em;
         right: -2.5em;
@@ -28,7 +28,7 @@
         width: 7em;
         height: 7em;
     }
-    .card-body p {
+    .card__body p {
         letter-spacing: 1px;
         font-size: 1.2em;
     }
@@ -125,7 +125,7 @@
         left: 2em;
         top: 11em;
     }
-    .card-img {
+    .card__img {
         right: -1em;
         top: 6em;
         width: 8.5em;
@@ -138,7 +138,7 @@
     .card-body {
         padding: 2em 1.5em;
     }
-    .card-body p {
+    .card__body p {
         font-size: 1.1em;
     }
     .icons {
