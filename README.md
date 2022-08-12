@@ -12,7 +12,8 @@ My portfolio is a collection of works that showcases my skills and talents. I ha
 ## Demo
 
 -   https://lteranl.github.io/portfolio/
-    ![eCommerceLibrary banner](https://media.giphy.com/media/zdrUJzCrUmXo0eA34j/giphy.gif)
+
+![portfolio](https://media.giphy.com/media/zdrUJzCrUmXo0eA34j/giphy.gif)
 
 ## Features
 
