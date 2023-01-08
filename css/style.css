@@ -1046,30 +1046,27 @@ footer {
 }
 /* project effects */
 
-.timeline li::after {
-  transition: background 0.4s ease-in-out;
-}
-
-.timeline li.in-view::after {
-  background: #f45b69;
-}
-
-.timeline li div {
-  visibility: hidden;
+.showOnScroll {
+  background: red;
+  height: 50vh;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2em;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  border-radius: 20px;
 }
 
-.timeline li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0);
+.showOnScroll:nth-of-type(odd) {
+  transform: translateX(-90%);
 }
 
-.timeline li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
+.showOnScroll:nth-of-type(even) {
+  transform: translateX(90%);
 }
 
-.timeline li.in-view div {
-  transform: none;
-  visibility: visible;
+.showOnScroll.visible {
+  transform: translateX(0);
+  background-color: lime;
   opacity: 1;
 }
