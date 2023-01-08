@@ -7,6 +7,8 @@
 }
 body {
   overflow: hidden;
+}
+.dark-theme body {
   background-color: #242424;
 }
 html {
