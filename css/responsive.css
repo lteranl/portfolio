@@ -10,11 +10,11 @@
     padding: 0;
   }
   .timeline {
-    width: 800px;
+    width: 100%;
   }
   .direction-l,
   .direction-r {
-    width: 370px;
+    width: 46%;
   }
 }
 /* 481px — 768px: iPads, Tablets */
