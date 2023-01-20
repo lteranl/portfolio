@@ -9,9 +9,9 @@ My portfolio is a collection of works that showcases my skills and talents. I ha
 -   [Animate css](https://animate.style/)
 -   [MDN](https://developer.mozilla.org/en-US/)
 
-## Demo
+## Live
 
--   https://lteranl.github.io/portfolio/
+-   www.jjteran.com
 
 ![portfolio](https://media.giphy.com/media/zdrUJzCrUmXo0eA34j/giphy.gif)
 
